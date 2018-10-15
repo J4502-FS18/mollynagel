@@ -2,6 +2,8 @@
 	box-sizing: border-box;
 }
 
+/*Background*/
+
 body {
   margin: auto;
   width: 50%;
@@ -11,6 +13,8 @@ body {
 div {
   background-color: white;
 }
+
+/*Fonts & Text*/
 
 h2 {
   background-color: #004d80;
@@ -29,33 +33,7 @@ p {
   font-family: 'Old Standard TT', "Times New Roman", serif;
 }
 
-ul {
-	list-style-type: none;
-  margin: 0;
-  padding: 0;
-	width: 100%;
-  background-color: #93D9E6;
-}
-/*
-li {
-  list-style-type: none;
-  text-align: center;
-  font-style: italic;
-  font-size: 1em;
-  font-family: 'Open Sans', Helvetica, sans-serif;
-  border: 1px solid #004d80;
-}
-*/
-li a {
-    display: block;
-    color: #ff1a75;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #ff1a75;
-    color: #004d80;
-}
+/*Links*/
 
 img {
   border: none;
@@ -66,7 +44,13 @@ a {
   font-style: italic;
   font-size: 1em;
   font-family: 'Open Sans', Helvetica, sans-serif;
+	text-decoration: none;
 }
+a:hover {
+	color: #004d80;
+}
+
+/*Flexbox*/
 
 .container {
   display: flex;
@@ -76,7 +60,6 @@ a {
 }
 
 .item {
-	 float: left;
    text-align: center;
    font-style: italic;
    font-size: 1em;
