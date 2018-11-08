@@ -59,7 +59,7 @@ a:hover {
 }
 
 @media (min-width: 600px) {
-	.items {
+/*	.items {
 		display: flex;
 		flex-flow: column nowrap;
 		grid-area: c;
@@ -68,22 +68,22 @@ a:hover {
 	.sitetitle {
 		grid-area: a;
 	}
-
+*/
 	.text {
 		max-width: 70%;
-		grid-area: b;
+		grid-area: a;
 	}
 
 	.imageofme {
-		grid-area: d;
+		grid-area: b;
 	}
 
 	.kittenimage {
-		grid-area: e;
+		grid-area: c;
 	}
 
 	.oldlink {
-		grid-area: f;
+		grid-area: d;
 	}
 
 .article {
@@ -92,9 +92,8 @@ a:hover {
 	grid-gap: 5px;
 	grid-template-areas:
 		"a a"
-		"c b"
-		"c f"
-		"e d"
+		"b c"
+		". d"
 }
 
 }
@@ -113,9 +112,8 @@ a:hover {
 		grid-gap: 10px;
 		grid-template-areas:
 			"a a a"
-			"c c c"
-			"b b b"
-			"e f d";
+			"c . b"
+			". d .";
 	}
 }
 
@@ -127,8 +125,30 @@ a:hover {
     grid-gap: 10px;
     grid-template-areas:
 				". a a ."
-				". f b ."
-				". c c ."
-				". d e .";
+				". . d ."
+				". b c .";
+	}
+}
+
+/*Javascript menu*/
+.menu-trigger {
+    order: 1;
+    font-size: 1.75em;
+    width: 2em;
+		font-style: normal;
+}
+
+.items{
+	display:none;
+}
+
+@media screen and (min-width:800px) {
+	.items {
+		display: flex;
+		flex-flow: row nowrap;
+}
+
+	.menu-trigger {
+			display: none;
 	}
 }
